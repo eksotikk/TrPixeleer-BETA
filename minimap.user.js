@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         TrPixeleer v2
+// @name         TrPixeleer v3
 // @namespace    http://tampermonkey.net/
 // @version      1.2.7
 // @description  TrPixeleer
