@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         TrPixeleer v3
+// @name         TrPixeleer v2
 // @namespace    http://tampermonkey.net/
 // @version      1.2.7
 // @description  TrPixeleer
@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
     needed_templates = null;
     //Cachebreaker to force refresh
     cachebreaker = null;
-	
+
 	//TurkishPixeleers info
 	vers = "Turkish Pixeleer Minimap 2.0 ";
 
@@ -60,7 +60,7 @@ window.addEventListener('load', function () {
 
      var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;"><div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 9px;"><div id="minimap-text" style="display: none;"></div><div id="minimap-title" style="line-height: 12px; font-size: 0.9em; display: block; cursor: pointer;">' + vers + '</div><div id="minimap-box" style="position: relative;width:420px;height:300px"><canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas><canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas><canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas></div><div id="minimap-config" style="line-height:20px;"><span id="hide-map" style="cursor:pointer;">Haritayı gizle</span> | <span id="follow-mouse" style="cursor:pointer;">Fareyi takip et</span> | <a href=https://discord.io/trzone target="_blank">Discord' | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  <span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span></div></div>'
+div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;"><div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 9px;"><div id="minimap-text" style="display: none;"></div><div id="minimap-title" style="line-height: 12px; font-size: 0.9em; display: block; cursor: pointer;">' + vers + '</div><div id="minimap-box" style="position: relative;width:420px;height:300px"><canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas><canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas><canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas></div><div id="minimap-config" style="line-height:20px;"><span id="hide-map" style="cursor:pointer;">Haritayı gizle</span> | <span id="follow-mouse" style="cursor:pointer;">Fareyi takip et</span> | <span id="color-line" style="cursor:pointer;">Beyaz Şerit</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  <span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span></div></div>'
 	document.body.appendChild(div);
         '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
