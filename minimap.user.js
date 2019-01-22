@@ -53,7 +53,7 @@ window.addEventListener('load', function () {
     cachebreaker = null;
 
 	//TurkishPixeleers info
-	vers = "Turkish Pixeleer Minimap 2.0 ";
+	vers = "TRzone Minimap {by-lydia} ";
 
 
     //Add minimap
